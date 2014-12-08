@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="prosper-workshop">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Angular Workshop</title>
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body ng-controller="AppCtrl as appCtrl">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Job</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="person in appCtrl.people">
+      <td>{{person.name}}</td>
+      <td>{{person.job}}</td>
+    </tr>
+  </tbody>
+</table>
+
+{{appCtrl.people}}
+
+<script src="angular.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
