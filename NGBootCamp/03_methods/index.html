@@ -8,13 +8,14 @@
 <body>
 
 <div ng-controller="FirstCtrl as firstCtrl">
-<!--SCOPE OF CONTROLLER-->
+  <!--SCOPE OF CONTROLLER-->
   Scope of controller: {{firstCtrl.message}}
   <br/>
   <input type="text" ng-model="firstCtrl.newMessage">
   <button ng-click="firstCtrl.update(firstCtrl.newMessage)">Update Message</button>
   <button ng-click="firstCtrl.update('Stock Msg')">Stock Message</button>
   {{ firstCtrl.message }}
+  <!--END SCOPE OF CONTROLLER-->
 </div>
 
 
