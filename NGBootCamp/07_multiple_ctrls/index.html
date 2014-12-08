@@ -7,6 +7,30 @@
 </head>
 <body ng-controller="AppCtrl as appCtrl">
 
+<h1>AppCtrl:</h1>
+<h2>{{appCtrl.message}}</h2>
+<h2>admin: {{adminCtrl.message}}</h2>
+
+<h2>dash: {{dashCtrl.message}}</h2>
+<hr/>
+
+<div ng-controller="AdminCtrl as adminCtrl">
+  <h1>AdminCtrl:</h1>
+  <h2>{{adminCtrl.message}}</h2>
+
+  <h2>dash: {{dashCtrl.message}}</h2>
+  <h2>app: {{appCtrl.message}}</h2>
+</div>
+
+<hr/>
+<div ng-controller="DashCtrl as dashCtrl">
+  <h1>DashCtrl:</h1>
+  <h2>{{dashCtrl.message}}</h2>
+  <h2>admin: {{adminCtrl.message}}</h2>
+  <h2>app: {{appCtrl.message}}</h2>
+</div>
+
+<hr/>
 
 <script src="angular.js"></script>
 <script src="app.js"></script>
