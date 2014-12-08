@@ -7,6 +7,19 @@
 </head>
 <body ng-controller="AppCtrl as appCtrl">
 
+  <ul>
+    <li ng-repeat="person in appCtrl.people">
+      {{person.name}}
+    </li>
+  </ul>
+
+  <div ng-repeat="person in appCtrl.morePeople track by $index">
+    {{$index}}. {{person.name}}
+  </div>
+
+
+
+  {{appCtrl.people}}
 
 <script src="angular.js"></script>
 <script src="app.js"></script>
