@@ -10,6 +10,12 @@
 </head>
 <body ng-controller="AppCtrl as app">
 
+<h2 ng-if="!app.people">Loading....</h2>
+
+<ul ng-if="app.people">
+  <li ng-repeat="person in app.people">{{person.name}}</li>
+</ul>
+
 
 <!-- inject:js -->
 <!-- any *.js files among your sources will go here as: <script src="FILE"></script> -->
