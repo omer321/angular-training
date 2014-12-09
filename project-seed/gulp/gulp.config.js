@@ -32,21 +32,5 @@ module.exports = {
   },
 
   browserify_shims: {
-    "tv4": {
-      path: './node_modules/tv4/tv4.js',
-      exports: 'tv4'
-    },
-    "objectpath": {
-      path: './node_modules/objectpath/lib/ObjectPath.js',
-      exports: 'objectpath'
-    },
-    "schemaForm": {
-      path: './node_modules/angular-schema-form/dist/schema-form.js',
-      exports: 'schemaForm'
-    },
-    "bootstrapDecorator": {
-      path: './node_modules/angular-schema-form/dist/bootstrap-decorator.min.js',
-      exports: 'bootstrapDecorator'
-    }
   }
 };
