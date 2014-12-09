@@ -1,0 +1,13 @@
+<h1>TABSET</h1>
+<style>
+  .selected {
+    border: 1px solid red;
+  }
+</style>
+<ul class="list-inline">
+  <li ng-class="{selected: tab.selected}" ng-click="tabsCtrl.selectTab(tab)" ng-repeat="tab in tabsCtrl.tabs">{{tab.label}}</li>
+</ul>
+
+<div ng-transclude>
+
+</div>
