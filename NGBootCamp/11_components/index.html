@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="prosper-workshop">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Angular Workshop</title>
+  <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body ng-controller="AppCtrl as appCtrl">
+
+<input type="text" ng-model="appCtrl.message"/>
+
+
+
+<pr-component action="appCtrl.itemClicked(thing)" items="appCtrl.config.data" message="HELLO"></pr-component>
+<pr-component action="appCtrl.thingClicked(thing)" items="appCtrl.config.data2" message="{{appCtrl.message}}"></pr-component>
+
+
+
+<script src="angular.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
