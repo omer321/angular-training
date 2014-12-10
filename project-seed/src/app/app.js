@@ -1,6 +1,7 @@
 angular.module('project-seed', [
   'project-seed.common',
   'project-seed.user',
+  'project-seed.user-list',
   'ui.router',
   'templates-app',
   'ngAria',
@@ -8,7 +9,7 @@ angular.module('project-seed', [
   'ngSanitize'
 ])
   .config(function($urlRouterProvider) {
-    $urlRouterProvider.otherwise('/user');
+    $urlRouterProvider.otherwise('/users');
   })
   .controller('AppCtrl', function AppCtrl($http) {
     var app = this;

@@ -9,11 +9,11 @@ angular.module('project-seed.user.repos', [
         controller: 'UserReposCtrl as userRepos'
       })
   })
-  .controller('UserReposCtrl', function($http, config, $stateParams) {
+  .controller('UserReposCtrl', function(repoModel, $stateParams) {
     var userRepos = this;
 
-    $http.get(config.baseApiUrl + '/users/' + $stateParams.login + '/repos').then(function(results) {
-      userRepos.repos = results.data;
+    repoModel.getUserRepos($stateParams.login).then(function(repos) {
+      userRepos.repos = repos;
     })
   })
 ;

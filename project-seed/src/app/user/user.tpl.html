@@ -1,4 +1,14 @@
-<h1>{{userCtrl.user.login}}</h1>
-<img class="avatar" ng-src="{{userCtrl.user.avatar_url}}"/>
-
-<div ui-view></div>
+<div class="col-md-3">
+  <h1>{{userCtrl.user.login}}</h1>
+  <img class="avatar" ng-src="{{userCtrl.user.avatar_url}}"/>
+  <br/>
+  <ul class="list-unstyled">
+    <li>Repositories</li>
+    <li>Events</li>
+  </ul>
+</div>
+<div ui-view class="col-md-9">
+  <div class="alert-warning text-center">
+    <h3>Perhaps some aggregated statistics or other info?</h3>
+  </div>
+</div>

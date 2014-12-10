@@ -5,7 +5,7 @@ angular.module('project-seed.user', [
   .config(function($stateProvider) {
     $stateProvider
       .state('user', {
-        url: '/user/:login',
+        url: '/users/:login',
         templateUrl: 'user/user.tpl.html',
         controller: 'UserCtrl as userCtrl'
       })

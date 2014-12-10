@@ -1,16 +1,10 @@
-require("jquery");
 require("angular");
 require("angular-ui-router");
 require("angular-sanitize");
 require("angular-aria");
 require("angular-moment");
-require("angular-scroll");
-require("./ui-bootstrap");
-
-require("ux-angularjs-datagrid");
 
 window._ = require("lodash");
-window.phoneParser = require("phone-parser");
 window.moment = require("moment");
 
 
