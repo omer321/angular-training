@@ -3,7 +3,7 @@ angular.module('project-seed.user.repos', [
 ])
   .config(function($stateProvider) {
     $stateProvider
-      .state('user.repos', {
+      .state('app.user.repos', {
         url: '/repos',
         templateUrl: 'user/repos/user-repos.tpl.html',
         controller: 'UserReposCtrl as userRepos'

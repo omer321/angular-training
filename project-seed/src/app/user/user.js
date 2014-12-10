@@ -4,17 +4,28 @@ angular.module('project-seed.user', [
 ])
   .config(function($stateProvider) {
     $stateProvider
-      .state('user', {
+      .state('app.user', {
         url: '/users/:login',
-        templateUrl: 'user/user.tpl.html',
-        controller: 'UserCtrl as userCtrl'
+        views: {
+          'header@': {
+            template: '<h1 class="text-danger">New Header for User</h1>'
+          },
+          'content@': {
+            templateUrl: 'user/user.tpl.html',
+            controller: 'UserCtrl as userCtrl'
+          }
+        }
       })
   })
-  .controller('UserCtrl', function UserCtrl(userModel, $stateParams) {
+  .controller('UserCtrl', function UserCtrl(userModel, $stateParams, repoModel) {
     var userCtrl = this;
 
     userModel.getUser($stateParams.login).then(function (user) {
       userCtrl.user = user;
-    })
+    });
+
+    //repoModel.getUserRepos($stateParams.login).then(function (repos) {
+    //  userCtrl.repos = repos;
+    //})
   })
 ;

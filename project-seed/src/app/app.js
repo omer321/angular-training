@@ -1,6 +1,7 @@
 angular.module('project-seed', [
   'project-seed.common',
   'project-seed.user',
+  'project-seed.header',
   'project-seed.user-list',
   'ui.router',
   'templates-app',
@@ -9,7 +10,22 @@ angular.module('project-seed', [
   'ngSanitize',
   'nvd3'
 ])
-  .config(function($urlRouterProvider) {
+  .config(function($stateProvider, $urlRouterProvider) {
+    $stateProvider
+      .state('app', {
+        url: '',
+        abstract: true,
+        views: {
+          'header': {
+            templateUrl: 'header/header.tpl.html',
+            controller: 'HeaderCtrl as headerCtrl'
+          },
+          'footer': {
+            template: '<div ps-footer></div>'
+          }
+        }
+      });
+
     $urlRouterProvider.otherwise('/users');
   })
   .controller('AppCtrl', function AppCtrl($http) {

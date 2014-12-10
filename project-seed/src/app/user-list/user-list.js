@@ -3,10 +3,14 @@ angular.module('project-seed.user-list', [
 ])
   .config(function ($stateProvider) {
     $stateProvider
-      .state('user-list', {
+      .state('app.user-list', {
         url: '/users',
-        controller: 'UserList as userList',
-        templateUrl: 'user-list/user-list.tpl.html'
+        views: {
+          'content@': {
+            controller: 'UserList as userList',
+            templateUrl: 'user-list/user-list.tpl.html'
+          }
+        }
       })
     ;
   })

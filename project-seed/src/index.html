@@ -9,11 +9,18 @@
 
 </head>
 <body ng-controller="AppCtrl as app">
-<div class="container" ui-view></div>
 
-<div>
-<nvd3 options='app.options' data='app.data'></nvd3>
-</div>
+<header ui-view="header"></header>
+
+<div class="container" ui-view="content"></div>
+
+<footer ui-view="footer"></footer>
+
+<!--<div>-->
+<!--<nvd3 options='app.options' data='app.data'></nvd3>-->
+<!--</div>-->
+
+
 <!-- inject:js -->
 <!-- any *.js files among your sources will go here as: <script src="FILE"></script> -->
 <!-- endinject -->
