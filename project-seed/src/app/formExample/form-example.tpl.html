@@ -1,0 +1,15 @@
+<div class="container">
+  <br/><br/>
+  <form name="newForm">
+    <div>
+      <input type="number" ng-model="formExample.number" min="0" max="10"/>
+      {{formExample.number}}
+      <br/>
+      <span class="text-danger" ng-show="newForm.$error.max">MAXIMUM FORM VALUE EXCEEDED</span>
+    </div>
+
+    <br/><br/>
+
+    <pre>{{newForm.$error}}</pre>
+  </form>
+</div>

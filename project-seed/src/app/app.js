@@ -8,7 +8,8 @@ angular.module('project-seed', [
   'ngAria',
   'angularMoment',
   'ngSanitize',
-  'nvd3'
+  'nvd3',
+  'project-seed.form-example'
 ])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
@@ -26,7 +27,7 @@ angular.module('project-seed', [
         }
       });
 
-    $urlRouterProvider.otherwise('/users');
+    $urlRouterProvider.otherwise('/form');
   })
   .controller('AppCtrl', function AppCtrl($http) {
     var app = this;
