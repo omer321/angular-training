@@ -21,6 +21,8 @@ angular.module('project-seed.user', [
     var userCtrl = this;
 
     userModel.getUser($stateParams.login).then(function (user) {
+
+      console.log(user);
       userCtrl.user = user;
     });
 
