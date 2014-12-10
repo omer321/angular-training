@@ -10,6 +10,10 @@
 </head>
 <body ng-controller="AppCtrl as app">
 <div class="container" ui-view></div>
+
+<div>
+<nvd3 options='app.options' data='app.data'></nvd3>
+</div>
 <!-- inject:js -->
 <!-- any *.js files among your sources will go here as: <script src="FILE"></script> -->
 <!-- endinject -->

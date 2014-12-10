@@ -3,6 +3,9 @@ require("angular-ui-router");
 require("angular-sanitize");
 require("angular-aria");
 require("angular-moment");
+require("angular-nvd3/dist/angular-nvd3");
+require("d3");
+require("nvd3");
 
 window._ = require("lodash");
 window.moment = require("moment");
