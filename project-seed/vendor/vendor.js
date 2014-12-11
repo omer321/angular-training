@@ -1,5 +1,6 @@
 require("angular");
 require("angular-ui-router");
+require("angular-messages");
 require("angular-sanitize");
 require("angular-aria");
 require("angular-moment");

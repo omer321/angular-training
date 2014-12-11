@@ -12,7 +12,6 @@ module.exports = function ( karma ) {
       'build/vendor.js',
       //start
       ,//end
-      'build/bundle.js',
       'src/**/*.spec.js',
       'build/app/**/*.js',
       'build/common/**/*.js',

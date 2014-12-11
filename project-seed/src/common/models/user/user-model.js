@@ -1,4 +1,6 @@
-angular.module('project-seed.models.user', [])
+angular.module('project-seed.models.user', [
+  'project-seed.config.constants'
+])
   .service('userModel', function UserModel($http, config, $q) {
     var userModel = this,
       getUrl = config.baseApiUrl + "/users/";

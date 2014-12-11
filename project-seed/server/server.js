@@ -61,7 +61,10 @@ function sendDefault(req, res) {
 
   try {
     mockResponse = getMock(mockPath);
-    res.status(200).send(JSON.parse(mockResponse))
+    setTimeout(function() {
+      res.status(200).send(JSON.parse(mockResponse))
+    }, 10)
+
   } catch (err) {
     console.log(err);
     res.status(500).send(JSON.parse(err));

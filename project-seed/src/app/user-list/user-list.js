@@ -1,5 +1,6 @@
 angular.module('project-seed.user-list', [
-  'ui.router'
+  'ui.router',
+  'project-seed.models.user'
 ])
   .config(function ($stateProvider) {
     $stateProvider

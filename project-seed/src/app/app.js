@@ -6,6 +6,7 @@ angular.module('project-seed', [
   'ui.router',
   'templates-app',
   'ngAria',
+  'ngMessages',
   'angularMoment',
   'ngSanitize',
   'nvd3',

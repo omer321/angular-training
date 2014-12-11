@@ -10,6 +10,18 @@
 
     <br/><br/>
 
+
+    <input type="text" name="name" ng-model="name"
+        ng-minlength="5"
+        ng-maxlength="20" required/>
+
+    <div ng-messages="newForm.name.$error">
+      <div ng-message="required">This field is required.</div>
+    </div>
+
+    <button disabled></button>
+
+
     <pre>{{newForm.$error}}</pre>
   </form>
 </div>
