@@ -9,7 +9,6 @@ angular.module('project-seed', [
   'ngMessages',
   'angularMoment',
   'ngSanitize',
-  'nvd3',
   'project-seed.form-example'
 ])
   .config(function($stateProvider, $urlRouterProvider) {
